@@ -3,9 +3,11 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public GameObject gameOver;
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("game over");
+        if (collision.gameObject.GetComponent<Move>() != null)
+            collision.gameObject.GetComponent<Move>().GameOver();
     }
 
     public void Update()

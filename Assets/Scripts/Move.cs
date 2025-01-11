@@ -9,7 +9,8 @@ public class Move : MonoBehaviour
     public float posLeft = -4f;
     public float jumpSpeed = 10f;
     bool currentPosition = true;
-
+    public GameObject gameOverCanvas;
+    public GameObject enemySpawner;
 
     // Update is called once per frame
     void Update()
@@ -27,5 +28,11 @@ public class Move : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(posRight, 0, 0), jumpSpeed * Time.deltaTime);
         }
 
+    }
+    public void GameOver()
+    {
+        gameOverCanvas.SetActive(true);
+        Destroy(enemySpawner);
+        Destroy(gameObject);
     }
 }
