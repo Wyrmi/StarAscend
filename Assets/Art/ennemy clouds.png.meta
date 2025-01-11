@@ -108,12 +108,144 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ennemy clouds_0
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1274
+        width: 313
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621391f72028bfe4b9d927e5be428467
+      internalID: -330702256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ennemy clouds_1
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1273
+        width: 544
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0394712d1c37be4bb3b87352b2b650c
+      internalID: -564498804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ennemy clouds_2
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 952
+        width: 469
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23ddf6166bb9ed4f9051418308be509
+      internalID: 373405217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ennemy clouds_3
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 949
+        width: 577
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf4e7bf4a3d77943a6632542debb781
+      internalID: 958373208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ennemy clouds_4
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 690
+        width: 708
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ad0fb8b28abf4458830fd279dfd9f6
+      internalID: 1985332683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ennemy clouds_5
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 690
+        width: 589
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578dc984e7f73db4f8d3e07b5ccdfad1
+      internalID: -511650663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 29fdab1d123fe724c85d9f8ac851cd2a
     internalID: 0
     vertices: []
     indices: 
@@ -122,7 +254,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ennemy clouds_0: -330702256
+      ennemy clouds_1: -564498804
+      ennemy clouds_2: 373405217
+      ennemy clouds_3: 958373208
+      ennemy clouds_4: 1985332683
+      ennemy clouds_5: -511650663
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
