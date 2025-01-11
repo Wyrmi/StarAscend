@@ -11,6 +11,7 @@ public class Move : MonoBehaviour
     bool currentPosition = true;
     public GameObject gameOverCanvas;
     public GameObject enemySpawner;
+    public HighScore highScore;
 
     // Update is called once per frame
     void Update()
@@ -31,7 +32,7 @@ public class Move : MonoBehaviour
     }
     public void GameOver()
     {
-        Debug.Log("game over");
+        highScore.playing = false;
         gameOverCanvas.SetActive(true);
         Destroy(enemySpawner);
         Destroy(gameObject);
