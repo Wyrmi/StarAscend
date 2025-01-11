@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEditor.ShaderGraph.Internal;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -7,6 +8,10 @@ public class EnemySpawner : MonoBehaviour
     public Transform spawnpointLeft;
     public Transform spawnpointRight;
     public float spawnInterval = 1f;
+
+    [SerializeField]
+    private float minInterval;
+
     private float offsetX;
     private float offsetY;
 
