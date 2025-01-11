@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5945644604588380190}
   - component: {fileID: 3988831422414622839}
   - component: {fileID: -1277754469926079102}
-  - component: {fileID: 775845247469542008}
   - component: {fileID: 3481002135862247100}
+  - component: {fileID: 9056308456682952841}
   m_Layer: 0
   m_Name: Enemy 2
   m_TagString: Untagged
@@ -104,8 +104,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 6
   gameOver: {fileID: 0}
---- !u!61 &775845247469542008
-BoxCollider2D:
+--- !u!50 &3481002135862247100
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2339007206783467169}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!60 &9056308456682952841
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -148,32 +175,41 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.69, y: 1.78}
-  m_EdgeRadius: 0
---- !u!50 &3481002135862247100
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2339007206783467169}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Points:
+    m_Paths:
+    - - {x: 2.345, y: -0.84999996}
+      - {x: 2.345, y: -0.74}
+      - {x: 2.335, y: -0.72999996}
+      - {x: 2.315, y: -0.35999998}
+      - {x: 2.105, y: 0.089999996}
+      - {x: 1.9549999, y: 0.28}
+      - {x: 1.685, y: 0.56}
+      - {x: 1.435, y: 0.75}
+      - {x: 1.135, y: 0.88}
+      - {x: 1.0849999, y: 0.89}
+      - {x: 0.66499996, y: 0.89}
+      - {x: 0.59499997, y: 0.85999995}
+      - {x: 0.45499998, y: 0.78999996}
+      - {x: 0.33499998, y: 0.65999997}
+      - {x: 0.24499999, y: 0.45999998}
+      - {x: 0.205, y: 0.38}
+      - {x: 0.175, y: 0.19}
+      - {x: -0.024999999, y: 0.17999999}
+      - {x: -0.155, y: 0.089999996}
+      - {x: -0.39499998, y: 0.19999999}
+      - {x: -0.59499997, y: 0.19}
+      - {x: -0.675, y: 0.14}
+      - {x: -0.78499997, y: 0.03}
+      - {x: -0.835, y: -0.099999994}
+      - {x: -1.155, y: 0.11}
+      - {x: -1.305, y: 0.17999999}
+      - {x: -1.4549999, y: 0.24}
+      - {x: -1.765, y: 0.21}
+      - {x: -1.9749999, y: 0.08}
+      - {x: -2.155, y: -0.12}
+      - {x: -2.2549999, y: -0.28}
+      - {x: -2.345, y: -0.47}
+      - {x: -2.345, y: -0.87}
+      - {x: -2.325, y: -0.89}
+      - {x: 2.325, y: -0.89}
+  m_UseDelaunayMesh: 0
