@@ -7,8 +7,8 @@ public class EnemySpawner : MonoBehaviour
     public Transform spawnpointLeft;
     public Transform spawnpointRight;
     public float spawnInterval = 1f;
-    private float offsetX = 0f;
-    private float offsetY = 0f;
+    private float offsetX;
+    private float offsetY;
 
     void Start()
     {
