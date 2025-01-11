@@ -21,16 +21,17 @@ public class Move : MonoBehaviour
         }
         if (currentPosition)
         {
-            transform.position = Vector3.MoveTowards(transform.position, new Vector3(posLeft, 0, 0), jumpSpeed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(posLeft, transform.position.y, transform.position.z), jumpSpeed * Time.deltaTime);
         }
         else
         {
-            transform.position = Vector3.MoveTowards(transform.position, new Vector3(posRight, 0, 0), jumpSpeed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(posRight, transform.position.y, transform.position.z), jumpSpeed * Time.deltaTime);
         }
 
     }
     public void GameOver()
     {
+        Debug.Log("game over");
         gameOverCanvas.SetActive(true);
         Destroy(enemySpawner);
         Destroy(gameObject);

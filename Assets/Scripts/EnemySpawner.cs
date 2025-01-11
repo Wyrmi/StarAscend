@@ -12,12 +12,11 @@ public class EnemySpawner : MonoBehaviour
     void Start()
     {
         StartCoroutine("SpawnObstacles");
-        Debug.Log("spawnEnd ");
     }
     IEnumerator SpawnObstacles()
     {
         if (enemies == null || enemies.Length == 0)
-            Debug.Log("no obstacles in spawner");
+            Debug.Log("no enemies in spawner");
         else
         {
             while (true)

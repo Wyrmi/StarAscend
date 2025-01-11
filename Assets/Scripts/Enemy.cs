@@ -4,10 +4,14 @@ public class Enemy : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public GameObject gameOver;
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.GetComponent<Move>() != null)
+        Debug.Log("hit");
+        if (collision.gameObject.GetComponent<Move>() != null) {
+            Debug.Log("player hit");
             collision.gameObject.GetComponent<Move>().GameOver();
+            
+        }
     }
 
     public void Update()

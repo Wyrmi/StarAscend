@@ -2,8 +2,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Reload : MonoBehaviour
 {
-    public void ReloadGame()
+    void Update()
     {
-        SceneManager.LoadScene("MainScene");
+        if (Input.GetKeyDown("space"))
+            SceneManager.LoadScene("MainScene");
     }
 }
