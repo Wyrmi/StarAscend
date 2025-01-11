@@ -12,6 +12,8 @@ public class Move : MonoBehaviour
     public GameObject gameOverCanvas;
     public GameObject enemySpawner;
     public HighScore highScore;
+    public AudioSource audioSource;
+    public AudioClip deathAudioClip;
 
     // Update is called once per frame
     void Update()
@@ -19,6 +21,7 @@ public class Move : MonoBehaviour
         if (Input.GetKeyDown("space"))
         {
             currentPosition = !currentPosition;
+            audioSource.Play();
         }
         if (currentPosition)
         {
@@ -32,6 +35,8 @@ public class Move : MonoBehaviour
     }
     public void GameOver()
     {
+        audioSource.clip = deathAudioClip;
+        audioSource.Play();
         highScore.playing = false;
         gameOverCanvas.SetActive(true);
         Destroy(enemySpawner);
